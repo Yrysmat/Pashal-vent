@@ -1,0 +1,63 @@
+#hero {
+  background: url(../img/bg.png) no-repeat center/cover;
+  height: 100vh;
+  padding-top: 167px;
+  margin-bottom: 100px; 
+}
+
+.hero {
+  &__wozdux {
+    @include wozdux-hero;
+    position: relative;
+    width: 500px;
+    text-align: end;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 1.5px;
+      background: var(--unnamed, #78c081);
+      height: 3px;
+      width: 120px;
+      bottom: 40px;
+    }
+  }
+
+  &__pashal {
+    @include pashal-hero;
+    position: relative;
+    width: 500px;
+    text-align: center;
+  }
+  &__text {
+    @include hero-text;
+    position: relative;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 90px;
+  }
+  &__title {
+    @include hero-tel;
+    position: relative;
+  }
+
+  &__div {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 52px;
+  }
+  &__link {
+    @include hero-tel;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    @include hero-btn;
+    margin-top: 110px;
+
+  }
+}

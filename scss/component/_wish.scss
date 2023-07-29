@@ -1,0 +1,28 @@
+.wish {
+  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__round {
+    fill: #000000;
+  }
+  &__lamp {
+    &::before {
+      content: "";
+    //   position: absolute;
+    //   border-radius: 1.5px;
+    //   background: var(--unnamed, #78c081);
+    //   height: 3px;
+    //   width: 120px;
+    //   bottom: 40px;
+    //   stroke-width: 2px;
+    //   stroke: var(--unnamed, #78c081);
+    //   width: 277px;
+    //   height: 44px;
+    }
+  } 
+  &__wintilator {
+    fill: #d9fadd;
+  }
+}

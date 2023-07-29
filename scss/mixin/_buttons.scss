@@ -1,0 +1,28 @@
+@mixin button-nav {
+    border-radius: 17px;
+    background: $button-green-color;
+  box-shadow: $button-border-color;
+  padding: 19px 42px 19px 43px;
+  border: 10px solid $button-border-color;
+  color: #FFF;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  
+}
+
+@mixin a-link {
+  color: #495e4c;
+  font-family: Proxima Nova;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+margin: 0 20px;
+  
+}

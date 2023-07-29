@@ -1,0 +1,49 @@
+#air {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.air {
+    display: flex;
+    justify-content: space-between;
+
+  &__title {
+    @include wozdux-hero;
+    position: relative;
+    width: 389px;
+    text-align: start;
+    font-size: 45px;
+    height: 60px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 1.5px;
+      background: var(--unnamed, #78c081);
+      width: 100px;
+      height: 2px;
+      top: 39px;
+      margin-left: 23px;
+    }
+  }
+  &__titles {
+    @include wozdux-hero;
+    position: relative;
+    width: 600px;
+    text-align: start;
+    font-size: 45px;
+  }
+  &__subtitle {
+    @include green-text;
+    margin-bottom: 17px;
+
+    
+  }
+  h4 {
+    @include green-text;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px;
+  }
+
+}

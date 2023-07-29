@@ -1,0 +1,43 @@
+@import './mixin/var';
+@import './mixin/mixin';
+@import './component/header';
+@import './component/hero';
+@import './component/footer';
+@import './component/wozdux';
+@import './component/montaj';
+@import './component/air';
+@import './component/wish';
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;                    
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+button {
+border: none;
+background: transparent;
+}
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}

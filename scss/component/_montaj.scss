@@ -1,0 +1,71 @@
+#montaj {
+    background-image: url(../../img/lists.png); 
+    background-repeat: no-repeat;
+    background-size:  1440px;
+    background-position: center bottom;
+  margin-top: 100px;
+}
+// .montaj__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 10px;
+// }
+.montaj {
+    margin-bottom: 300px;
+  &__title {
+    @include wozdux-hero;
+    position: relative;
+    width: 867px;
+    text-align: start;
+    font-size: 45px;
+    margin-bottom: 85px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 1.5px;
+      background: var(--unnamed, #78c081);
+      width: 236px;
+      height: 2px;
+      bottom: 39px;
+      margin-left: 126px;
+    }
+  }
+  &__view {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px; 
+    
+  }
+  &__card {
+    position: relative;
+  }
+ 
+  &__price {
+    position: absolute;
+    top: 16px;
+    display: inline-block;
+    padding: 5px 20px 5px 15px;
+    color: #495d4c;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: normal;
+    border-radius: 0px 10px 10px 0px;
+background: #D9FADD;
+  }
+  &__subtitle {
+    position: relative;
+    top: -10px;
+    color: #78c081;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 50px 13px 15px;
+    background: #ffffff;
+    backdrop-filter: blur(1px);
+    border-radius:0 0 25px 25px;
+    box-shadow: 0px 2px 4px 0px rgba(46, 35, 25, 0.10);
+  }
+}

@@ -1,0 +1,38 @@
+#wozdux {
+  margin-top: 100px;
+}
+
+.wozdux {
+  &__title {
+    @include wozdux-hero;
+    position: relative;
+    width: 500px;
+    text-align: start;
+    font-size: 45px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 1.5px;
+      background: var(--unnamed, #78c081);
+      width: 245px;
+      height: 2px;
+      bottom: 39px;
+      margin-left: 56px;
+    }
+  }
+  &__text {
+    @include wozdux-text;
+    width: 444px;
+    margin-bottom: 20px;
+  }
+  &__montaj {
+    @include wozdux-text;
+    margin-bottom: 20px;
+    width: 444px;
+  }
+  &__texts {
+    @include wozdux-text;
+    width: 444px;
+  }
+}
